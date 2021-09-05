@@ -1,0 +1,17 @@
+<p>propertybinding works!</p>
+
+<!-- syntax=> [atrribute name/directive]="Property_Name" -->
+
+<input type="text" placeholder="Enter the Username"
+[value]="name"> <br><br>
+
+<img [src]="imgurl" alt="" style="width: 250px;height:250px;">
+<hr>
+<div hidden=" {{ishidden}} ">
+    
+    apply string interpolation 
+</div> <br><br>
+
+<div [hidden]="ishidden">
+    apply Property Binding 
+</div> <br><br>
