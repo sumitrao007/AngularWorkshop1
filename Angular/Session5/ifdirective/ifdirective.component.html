@@ -1,0 +1,19 @@
+<p>ifdirective works!</p>
+
+<!-- *ngIf it is structural directive -->
+
+<div *ngIf="rating<4">
+    Condition is true
+</div>
+<br><br>
+<div *ngIf="rating1<4;else elsepart">
+    Condition is true
+</div>
+
+<!-- <div #elsepart>
+    condition is false
+</div> -->
+
+<ng-template #elsepart>
+    <h2>condition is false</h2>
+</ng-template>

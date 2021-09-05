@@ -1,0 +1,33 @@
+<p>eventbinding works!</p>
+
+<!-- syntax=> (eventName)="MethodName()" -->
+
+<button (click)="onClick()">Click</button> <br>
+
+<!-- template ref variable=>  -->
+<br><br>
+
+<input type="text" #myinput
+placeholder="Enter the Username"> <br><br>
+
+<button (click)="onSend(myinput.value)">Send</button>
+<br><br>
+
+<button (click)="onSend1(myinput)">Send1</button>
+
+<br><br>
+<input type="number" #num1 placeholder="Enter the Num1"> <br>
+<input type="number" #num2 placeholder="Enter the Num2"> <br>
+<br>
+<button (click)="onAddition(num1.value,num2.value)">Addition</button> <br><br>
+<input type="text" [value]="result"
+placeholder="result is"
+
+>
+<hr>
+
+<input type="text" [(ngModel)]="name"
+placeholder="Enter the Name"> <br>
+{{name}}
+
+
